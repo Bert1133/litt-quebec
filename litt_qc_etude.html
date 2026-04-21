@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Littérature québécoise — Guide d'étude</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,300;1,400&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E1420;--paper:#F4EBD7;--gold:#C9A34E;--gold2:#D9B868;--slate:#1A2232;--slate2:#232C40;--text:#EBE3CF;--dim:#A89F89;--ok:#6FB97E;--no:#D06666;--bd:rgba(201,163,78,.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter Tight',system-ui,sans-serif;background:var(--ink);color:var(--text);line-height:1.6;background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(201,163,78,.08),transparent 70%);background-attachment:fixed}
+.hero{padding:3.5rem 1.5rem 2rem;text-align:center;border-bottom:1px solid var(--bd)}
+.hero::before{content:"❦";display:block;color:var(--gold);font-size:1.3rem;letter-spacing:.5em;margin-bottom:.8rem}
+.eyebrow{font-family:'Fraunces',serif;font-style:italic;color:var(--gold2);letter-spacing:.15em;text-transform:uppercase;font-size:.72rem;margin-bottom:.8rem}
+h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.9rem,5vw,3.2rem);letter-spacing:-.02em;line-height:1.05;color:var(--paper);margin-bottom:.6rem}
+h1 em{font-style:italic;color:var(--gold)}
+.sub{color:var(--dim);font-size:.93rem;max-width:520px;margin:0 auto}
+.nav{position:sticky;top:0;z-index:50;background:rgba(14,20,32,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd);padding:.7rem 1rem;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav-in{display:flex;gap:.25rem;max-width:1100px;margin:0 auto;min-width:max-content}
+.nav button{background:transparent;border:1px solid transparent;color:var(--dim);padding:.5rem .95rem;font-family:inherit;font-size:.82rem;font-weight:500;cursor:pointer;border-radius:999px;white-space:nowrap;transition:all .2s}
+.nav button:hover{color:var(--paper);background:rgba(201,163,78,.06)}
+.nav button.active{color:var(--ink);background:var(--gold);font-weight:600}
+.nav .rn{font-family:'Fraunces',serif;font-style:italic;margin-right:.3rem;opacity:.7}
+main{max-width:1100px;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+.tab{display:none;animation:fi .4s ease}.tab.active{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.chead{margin-bottom:2.5rem;padding-bottom:1.25rem;border-bottom:1px solid var(--bd)}
+.chead .d{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:.95rem;letter-spacing:.05em;margin-bottom:.4rem}
+h2{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.6rem,4vw,2.5rem);letter-spacing:-.02em;color:var(--paper);line-height:1.1}
+.tag{color:var(--dim);margin-top:.8rem;font-size:.97rem;max-width:680px;font-style:italic;font-family:'Fraunces',serif;font-weight:300}
+.sec{margin-bottom:2.5rem}
+.stit{font-family:'Fraunces',serif;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem;display:flex;align-items:center;gap:.75rem}
+.stit::after{content:"";flex:1;height:1px;background:var(--bd)}
+.pros p{margin-bottom:.9rem}.pros p:last-child{margin:0}
+.pros strong{color:var(--gold2)}
+.pros ul{list-style:none}
+.pros ul li{padding:.35rem 0 .35rem 1.4rem;position:relative}
+.pros ul li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+.tl{display:grid;gap:.4rem;background:linear-gradient(135deg,var(--slate),var(--slate2));border:1px solid var(--bd);border-radius:4px;padding:1.4rem}
+.tl .r{display:grid;grid-template-columns:85px 1fr;gap:1rem;padding:.4rem 0;border-bottom:1px dashed rgba(201,163,78,.15)}
+.tl .r:last-child{border:none}
+.tl .y{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-weight:500}
+.tl .e{font-size:.9rem}
+.auths{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.9rem}
+.ac{background:var(--slate);border:1px solid var(--bd);border-radius:4px;padding:1.15rem;position:relative;overflow:hidden;transition:all .22s}
+.ac::before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:var(--gold);opacity:.5;transition:opacity .22s}
+.ac:hover{border-color:var(--gold2);transform:translateY(-2px)}.ac:hover::before{opacity:1}
+.an{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:500;color:var(--paper);line-height:1.2}
+.ad{font-size:.78rem;color:var(--dim);font-style:italic;margin-bottom:.7rem;margin-top:.1rem}
+.aw{font-family:'Fraunces',serif;font-style:italic;color:var(--gold2);font-size:.93rem;display:block;margin-bottom:.3rem}
+.aw .yr{color:var(--dim);font-style:normal;font-size:.82rem;margin-left:.35rem}
+.no{font-size:.86rem;line-height:1.55}
+.bg{display:inline-block;background:rgba(201,163,78,.15);color:var(--gold);font-size:.68rem;padding:.15rem .55rem;border-radius:3px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;margin-top:.55rem;border:1px solid var(--bd)}
+.igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.85rem;margin-top:2rem}
+.ic{background:var(--slate);border:1px solid var(--bd);border-radius:4px;padding:1.35rem 1.15rem;cursor:pointer;transition:all .25s;text-align:left;color:inherit;font-family:inherit;width:100%}
+.ic:hover{background:var(--slate2);border-color:var(--gold2);transform:translateY(-3px)}
+.ic .n{font-family:'Fraunces',serif;font-style:italic;font-size:2.3rem;font-weight:300;color:var(--gold);line-height:1;display:block;margin-bottom:.6rem}
+.ic .dt{color:var(--dim);font-size:.74rem;letter-spacing:.05em;margin-bottom:.2rem}
+.ic .tt{font-family:'Fraunces',serif;color:var(--paper);font-size:1rem;font-weight:500;line-height:1.25}
+.qi{text-align:center;padding:1.5rem 0;max-width:600px;margin:0 auto}
+.qi p{color:var(--dim);margin:.9rem 0 1.6rem}
+.qs{background:var(--slate);border:1px solid var(--bd);border-radius:4px;padding:1.25rem;margin-bottom:1.5rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:center}
+.qsr{display:flex;align-items:center;gap:.5rem;font-size:.88rem}
+.qsr label{color:var(--dim)}
+.qsr select{background:var(--ink);border:1px solid var(--bd);color:var(--paper);padding:.4rem .7rem;border-radius:3px;font-family:inherit;font-size:.88rem}
+.btn{background:var(--gold);color:var(--ink);border:none;padding:.8rem 1.8rem;font-family:'Fraunces',serif;font-weight:500;font-size:.98rem;letter-spacing:.03em;cursor:pointer;border-radius:3px;transition:all .2s}
+.btn:hover{background:var(--gold2);transform:translateY(-1px)}.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.bgh{background:transparent;border:1px solid var(--bd);color:var(--text)}.bgh:hover{background:var(--slate);color:var(--paper)}
+.qp{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.3rem;padding-bottom:.9rem;border-bottom:1px solid var(--bd);font-size:.83rem;color:var(--dim)}
+.pb{flex:1;height:3px;background:var(--slate);margin:0 1.2rem;border-radius:3px;overflow:hidden;position:relative}
+.pf{position:absolute;inset:0;background:var(--gold);transform-origin:left;transition:transform .4s}
+.qc{background:var(--slate);border:1px solid var(--bd);border-radius:4px;padding:1.75rem 1.5rem;margin-bottom:1.25rem}
+.qt{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.9rem}
+.qq{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:500;color:var(--paper);line-height:1.4;margin-bottom:1.5rem}
+.qo{display:grid;gap:.55rem}
+.qopt{background:var(--ink);border:1px solid var(--bd);color:var(--text);padding:.85rem 1rem;border-radius:3px;cursor:pointer;text-align:left;font-family:inherit;font-size:.93rem;transition:all .15s;line-height:1.4;width:100%}
+.qopt:hover:not(:disabled){border-color:var(--gold2);background:var(--slate2)}
+.qopt.sel{border-color:var(--gold);background:rgba(201,163,78,.08)}
+.qopt.ok{border-color:var(--ok);background:rgba(111,185,126,.12);color:var(--paper)}
+.qopt.no{border-color:var(--no);background:rgba(208,102,102,.12);color:var(--paper)}
+.qopt:disabled{cursor:default}
+.qf{margin-top:1.1rem;padding:.9rem 1rem;border-radius:3px;font-size:.89rem;line-height:1.55;border-left:3px solid var(--gold);background:rgba(201,163,78,.06);animation:fi .3s ease}
+.qf strong{color:var(--gold2)}
+.qin{background:var(--ink);border:1px solid var(--bd);color:var(--paper);padding:.8rem 1rem;font-family:inherit;font-size:.98rem;border-radius:3px;width:100%;margin-bottom:.9rem}
+.qin:focus{outline:none;border-color:var(--gold)}
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+@media(max-width:600px){.mg{grid-template-columns:1fr}}
+.mc{display:grid;gap:.45rem}
+.mi{background:var(--ink);border:1px solid var(--bd);padding:.7rem .85rem;border-radius:3px;cursor:pointer;font-size:.87rem;transition:all .15s}
+.mi:hover:not(.mok):not(.mno){border-color:var(--gold2)}
+.mi.act{border-color:var(--gold);background:rgba(201,163,78,.1)}
+.mi.mok{opacity:.6;cursor:default;border-color:var(--ok);background:rgba(111,185,126,.08)}
+.mi.mno{opacity:.6;cursor:default;border-color:var(--no);background:rgba(208,102,102,.08)}
+.ol{display:grid;gap:.45rem;margin-bottom:.9rem}
+.oi{background:var(--ink);border:1px solid var(--bd);padding:.7rem .85rem;border-radius:3px;display:flex;align-items:center;gap:.75rem;font-size:.88rem}
+.oi .on{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);min-width:1.4rem}
+.oi.ok{border-color:var(--ok)}.oi.no{border-color:var(--no)}
+.oi .mv{margin-left:auto;display:flex;gap:.25rem}
+.oi .mv button{background:var(--slate);border:1px solid var(--bd);color:var(--text);width:26px;height:26px;border-radius:3px;cursor:pointer;font-size:.8rem}
+.oi .mv button:hover{background:var(--slate2);color:var(--gold)}
+.res{text-align:center;padding:1.5rem 0}
+.res .sc{font-family:'Fraunces',serif;font-size:3.5rem;font-weight:400;color:var(--gold);line-height:1;margin:.8rem 0}
+.res .sc em{font-weight:300;color:var(--dim);font-style:normal;font-size:1.8rem}
+.res .vd{font-family:'Fraunces',serif;font-style:italic;color:var(--paper);font-size:1.15rem;margin-bottom:1.5rem}
+.rb{background:var(--slate);border:1px solid var(--bd);border-radius:4px;padding:1.15rem;margin-bottom:1.5rem;text-align:left;max-width:480px;margin-left:auto;margin-right:auto}
+.rb h4{font-family:'Fraunces',serif;color:var(--gold);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
+.rb .rw{display:flex;justify-content:space-between;padding:.3rem 0;font-size:.86rem;border-bottom:1px dashed var(--bd)}
+.rb .rw:last-child{border:none}
+.rb .pct{color:var(--gold);font-variant-numeric:tabular-nums}
+.acts{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-top:1.25rem}
+footer{text-align:center;padding:2.5rem 1.5rem;color:var(--dim);font-size:.82rem;border-top:1px solid var(--bd)}
+footer em{color:var(--gold);font-style:italic}
+@media(max-width:600px){.hero{padding:2.5rem 1rem 1.5rem}main{padding:1.5rem .85rem 3rem}.qc{padding:1.25rem 1rem}.qq{font-size:1.05rem}.ac{padding:.95rem}}
+</style></head><body>
+
+<header class="hero">
+  <div class="eyebrow">Cégep · Session d'étude</div>
+  <h1>Anthologie de la <em>littérature</em> québécoise</h1>
+  <p class="sub">Guide d'étude complet — des origines à aujourd'hui. Résumés, fiches d'auteurs et quiz à questions variées.</p>
+</header>
+
+<nav class="nav"><div class="nav-in" id="nav"></div></nav>
+
+<main id="content"></main>
+
+<footer>Préparé pour <em>Bert</em> · Cégep Garneau · Basé sur l'<em>Anthologie de la littérature québécoise</em>, 4<sup>e</sup> éd. (Vaillancourt &amp; Rousseau, 2023)</footer>
+
+<script>
+const CH = {
+  ch1: {
+    dates:"1534 — 1760", rn:"I", title:"La Nouvelle-France",
+    tag:"De la découverte du Saint-Laurent à la Conquête : la littérature comme outil d'exploration, d'évangélisation et de chronique coloniale.",
+    tl:[["1534","Premier voyage de Jacques Cartier"],["1608","Fondation de Québec par Champlain"],["1632","Début des Relations des Jésuites"],["1642","Fondation de Montréal"],["1663","La Nouvelle-France devient colonie royale"],["1759","Bataille des Plaines d'Abraham"],["1760","Capitulation de Montréal — fin du Régime français"]],
+    car:["<strong>Écriture utilitaire</strong> : pas encore de littérature au sens moderne. On écrit pour informer la métropole et documenter le Nouveau Monde.","<strong>Genres dominants</strong> : récits de voyage, relations, correspondance, chroniques, mémoires.","<strong>Deux finalités</strong> : l'exploration (décrire le territoire) et l'évangélisation (convertir les peuples autochtones).","<strong>Regard européen</strong> sur les Premières Nations : oscille entre fascination (« bon sauvage ») et condescendance religieuse.","<strong>Public visé</strong> : les lecteurs français, les autorités religieuses, le roi — pas les colons."],
+    aut:[
+      {n:"Jacques Cartier",d:"1491 — 1557",w:"Relations des voyages",y:"1534—1542",no:"Explorateur malouin. Récits de ses trois voyages. Premier à remonter le Saint-Laurent. Donne à la terre le nom de « Canada » (du mot iroquoien <em>kanata</em>, village).",b:"Père des récits"},
+      {n:"Samuel de Champlain",d:"c.1567 — 1635",w:"Les Voyages",y:"1603, 1613, 1632",no:"Fondateur de Québec (1608). Géographe, cartographe et chroniqueur méticuleux. Ethnographe des nations amérindiennes."},
+      {n:"Marie de l'Incarnation",d:"1599 — 1672",w:"Correspondance",y:"",no:"Ursuline, fondatrice du premier couvent-école pour filles en Amérique. Ses lettres à son fils : l'un des plus grands témoignages spirituels de la colonie.",b:"Écriture mystique"},
+      {n:"Relations des Jésuites",d:"1632 — 1672",w:"Relations annuelles",y:"",no:"Rapports annuels des missionnaires envoyés en France. Source historique et ethnographique inégalée sur les Hurons, Iroquois et Innus."},
+      {n:"Pierre-Esprit Radisson",d:"c.1636 — 1710",w:"Relations de voyages",y:"",no:"Coureur des bois et explorateur. Capturé puis adopté par les Iroquois — ses récits mêlent aventure et immersion dans le monde autochtone."},
+      {n:"Baron de Lahontan",d:"1666 — 1716",w:"Dialogues avec un sauvage",y:"1703",no:"Officier et explorateur. Dans ses <em>Dialogues avec le sauvage Adario</em>, il se sert du Huron pour critiquer les mœurs européennes. Annonce Rousseau.",b:"Précurseur"},
+      {n:"Élisabeth Bégon",d:"1696 — 1755",w:"Correspondance",y:"1748—1753",no:"Bourgeoise de Montréal. Ses lettres à son gendre peignent la vie quotidienne de l'élite coloniale en fin de Régime français."}
+    ]
+  },
+  ch2: {
+    dates:"1760 — 1900", rn:"II", title:"Un peuple en quête de lui-même",
+    tag:"Entre la Conquête et la fin du XIX<sup>e</sup> : la littérature devient l'outil par lequel un peuple dominé affirme son existence.",
+    tl:[["1760","Conquête britannique"],["1791","Acte constitutionnel — Haut et Bas-Canada"],["1837—38","Rébellions des Patriotes"],["1840","Acte d'Union — Rapport Durham : « peuple sans histoire ni littérature »"],["1860","Fondation du Mouvement littéraire et patriotique de Québec"],["1867","Confédération canadienne"],["1895","Fondation de l'École littéraire de Montréal"]],
+    car:["<strong>Réaction au Rapport Durham</strong> : prouver que les Canadiens français ont une histoire et une littérature.","<strong>Thèmes</strong> : histoire nationale, fidélité catholique, attachement à la terre, survivance.","<strong>Mouvement littéraire et patriotique de Québec</strong> (1860) : Crémazie, Casgrain, Gérin-Lajoie, Taché — littérature au service de la nation.","<strong>Genres</strong> : roman historique, poésie patriotique, contes et légendes, chronique, essai.","<strong>Fin du siècle</strong> : l'École littéraire de Montréal (1895) amorce un renouveau formel et introduit le symbolisme. Émergence de Nelligan."],
+    aut:[
+      {n:"François-Xavier Garneau",d:"1809 — 1866",w:"Histoire du Canada",y:"1845—1852",no:"Historien autodidacte. Son œuvre est la réponse directe au Rapport Durham : elle fonde la conscience historique des Canadiens français.",b:"Œuvre fondatrice"},
+      {n:"Philippe Aubert de Gaspé (père)",d:"1786 — 1871",w:"Les Anciens Canadiens",y:"1863",no:"Premier grand roman historique canadien-français. Nostalgie du Régime français, société seigneuriale, récit de la Conquête."},
+      {n:"Octave Crémazie",d:"1827 — 1879",w:"Le Drapeau de Carillon",y:"1858",no:"Premier poète national. Exilé en France, il chante la patrie perdue dans une poésie romantique et mélancolique."},
+      {n:"Antoine Gérin-Lajoie",d:"1824 — 1882",w:"Jean Rivard",y:"1862—1864",no:"Roman idéologique : valorise la colonisation agricole comme voie de salut national. Auteur du célèbre <em>Un Canadien errant</em>."},
+      {n:"Louis Fréchette",d:"1839 — 1908",w:"La Légende d'un peuple",y:"1887",no:"Poète patriotique prolifique. Inspiré de Hugo, il narre en vers l'épopée des Canadiens français depuis la Nouvelle-France."},
+      {n:"Laure Conan (Félicité Angers)",d:"1845 — 1924",w:"Angéline de Montbrun",y:"1881—1884",no:"<strong>Première romancière</strong> canadienne-française. <em>Angéline</em> est le <strong>premier roman psychologique</strong> de notre littérature — introspection, deuil, renoncement.",b:"Première romancière"},
+      {n:"Arthur Buies",d:"1840 — 1901",w:"Chroniques, humeurs et caprices",y:"1873",no:"Journaliste et pamphlétaire libéral, anticlérical. Souffle un vent de modernité et d'irrévérence sur le Québec du XIX<sup>e</sup>."},
+      {n:"Joseph-Charles Taché",d:"1820 — 1894",w:"Forestiers et voyageurs",y:"1863",no:"Recueil de contes inspirés des récits oraux des draveurs. Participe à l'invention d'un folklore littéraire national."},
+      {n:"Émile Nelligan",d:"1879 — 1941",w:"Le Vaisseau d'or",y:"c.1899",no:"Poète précoce, figure fondatrice de la poésie moderne au Québec. École littéraire de Montréal. Interné à 19 ans pour troubles mentaux.",b:"Poète maudit"}
+    ]
+  },
+  ch3: {
+    dates:"1900 — 1945", rn:"III", title:"Le Québec dans la tourmente",
+    tag:"Industrialisation, guerres mondiales, crise : la littérature se partage entre le repli sur la terre (Régionalisme) et l'ouverture au monde (Exotisme).",
+    tl:[["1900","Industrialisation et urbanisation rapides"],["1914—18","Première Guerre mondiale — crise de la conscription (1917)"],["1929","Début de la Grande Dépression"],["1937","Saint-Denys Garneau publie <em>Regards et jeux dans l'espace</em>"],["1939—45","Deuxième Guerre mondiale"],["1944","Retour au pouvoir de Maurice Duplessis"],["1945","<em>Bonheur d'occasion</em> de Gabrielle Roy — premier grand roman urbain"]],
+    car:["<strong>Opposition majeure</strong> : Régionalistes (Terroir, valeurs rurales et religieuses) vs Exotiques (ouverture à la modernité parisienne).","<strong>Le roman du terroir</strong> atteint son apogée puis se termine avec <em>Trente arpents</em> de Ringuet (1938), qui montre son déclin.","<strong>Naissance du roman urbain</strong> avec Gabrielle Roy en 1945 — tournant majeur.","<strong>En poésie</strong> : Nelligan continue d'influencer; Saint-Denys Garneau introduit le vers libre et l'angoisse existentielle moderne.","<strong>Contexte religieux et politique</strong> pesant : Église catholique omniprésente, conservatisme social."],
+    aut:[
+      {n:"Louis Hémon",d:"1880 — 1913",w:"Maria Chapdelaine",y:"1913",no:"Français venu travailler au Lac-Saint-Jean. Son roman devient le modèle classique du roman du terroir : fidélité à la langue, à la foi, à la terre.",b:"Roman du terroir"},
+      {n:"Claude-Henri Grignon",d:"1894 — 1976",w:"Un homme et son péché",y:"1933",no:"Le personnage de Séraphin Poudrier, l'avare obsédé par son or, devient une figure mythique du Québec. Roman du terroir tournant à la critique."},
+      {n:"Félix-Antoine Savard",d:"1896 — 1982",w:"Menaud, maître-draveur",y:"1937",no:"Prêtre et écrivain. Roman épique et lyrique : Menaud, draveur charlevoisien, pleure la vente des forêts aux étrangers. Hommage à <em>Maria Chapdelaine</em>."},
+      {n:"Ringuet (Philippe Panneton)",d:"1895 — 1960",w:"Trente arpents",y:"1938",no:"Médecin-écrivain. <strong>Fin du roman du terroir</strong> : vision réaliste et désenchantée du paysan vieillissant dépossédé par la modernité.",b:"Fin du terroir"},
+      {n:"Germaine Guèvremont",d:"1893 — 1968",w:"Le Survenant",y:"1945",no:"Le Survenant, étranger mystérieux, bouleverse la vie d'un village du Chenal-du-Moine. Dernier grand roman de tradition rurale."},
+      {n:"Gabrielle Roy",d:"1909 — 1983",w:"Bonheur d'occasion",y:"1945",no:"Manitobaine installée à Montréal. <strong>Premier grand roman urbain</strong> : Saint-Henri, quartier ouvrier, famille Lacasse, guerre comme seule porte de sortie.",b:"Roman urbain"},
+      {n:"Saint-Denys Garneau",d:"1912 — 1943",w:"Regards et jeux dans l'espace",y:"1937",no:"Cousin d'Anne Hébert. <strong>Fondateur de la poésie moderne québécoise</strong> : vers libre, angoisse existentielle, solitude. Meurt jeune.",b:"Poésie moderne"},
+      {n:"Alain Grandbois",d:"1900 — 1975",w:"Les Îles de la nuit",y:"1944",no:"Grand voyageur. Poésie cosmique, sensuelle, ouverte sur le monde. Influence majeure sur la génération de l'Hexagone."},
+      {n:"Anne Hébert",d:"1916 — 2000",w:"Les Songes en équilibre",y:"1942",no:"Premier recueil. Cousine de Saint-Denys Garneau. Débute une œuvre majeure qui traverse tout le XX<sup>e</sup> siècle québécois."},
+      {n:"Rina Lasnier",d:"1910 — 1997",w:"Le Chant de la montée",y:"1947",no:"Poésie mystique et spirituelle. Figure importante trop longtemps oubliée de la poésie féminine québécoise.",b:"Nouveauté 4e éd."}
+    ]
+  },
+  ch4: {
+    dates:"1945 — 1960", rn:"IV", title:"La Grande Noirceur",
+    tag:"L'ère Duplessis : conservatisme étouffant et premières fissures. Le <em>Refus global</em> annonce la révolution à venir.",
+    tl:[["1944","Retour de Duplessis au pouvoir (jusqu'en 1959)"],["1945","<em>Bonheur d'occasion</em> — Gabrielle Roy"],["1948","<strong>Refus global</strong> — Paul-Émile Borduas et les Automatistes"],["1948","<em>Tit-Coq</em> — Gratien Gélinas : naissance d'un théâtre populaire"],["1953","<em>Le Tombeau des rois</em> — Anne Hébert"],["1958","<em>Agaguk</em> — Yves Thériault"],["1959","Mort de Duplessis; début de la fin de la Grande Noirceur"]],
+    car:["<strong>Régime Duplessis</strong> (1944—1959) : appelé la « Grande Noirceur » — cléricalisme, conservatisme, censure, répression des idées modernes.","<strong>Le <em>Refus global</em> (1948)</strong> : manifeste artistique majeur signé par 16 artistes (Borduas, Riopelle, Françoise Sullivan, etc.). Rupture totale avec la tradition.","<strong>La poésie</strong> devient le lieu de l'exil intérieur et de la quête d'un « pays » encore à nommer.","<strong>Le théâtre</strong> émerge avec une voix populaire et québécoise grâce à Gélinas.","<strong>Le roman</strong> se diversifie : urbain (Lemelin, Roy), exotique (Thériault), psychologique."],
+    aut:[
+      {n:"Paul-Émile Borduas",d:"1905 — 1960",w:"Refus global",y:"1948",no:"Peintre-chef des Automatistes. Manifeste collectif : dénonce la peur, la religion, la société fermée. Moment-clé de la modernité québécoise.",b:"Manifeste majeur"},
+      {n:"Roger Lemelin",d:"1919 — 1992",w:"Au pied de la pente douce",y:"1944",no:"Peintre de Québec (quartier Saint-Sauveur). <em>Les Plouffe</em> (1948) deviendront une mythologie populaire. Roman urbain."},
+      {n:"Yves Thériault",d:"1915 — 1983",w:"Agaguk",y:"1958",no:"Prolifique. <em>Agaguk</em>, roman inuit, est un bestseller international. Il écrit aussi sur les Autochtones, la ruralité, la sensualité."},
+      {n:"Gratien Gélinas",d:"1909 — 1999",w:"Tit-Coq",y:"1948",no:"<strong>Premier grand succès du théâtre québécois populaire</strong>. Tit-Coq, soldat bâtard, cherche une place dans une société qui le rejette.",b:"Théâtre populaire"},
+      {n:"Anne Hébert",d:"1916 — 2000",w:"Le Tombeau des rois",y:"1953",no:"Recueil capital de la poésie québécoise. Atmosphère sombre, morbide, onirique. Exploration des tombeaux de l'enfance et de l'inconscient.",b:"Recueil-clé"},
+      {n:"Alain Grandbois",d:"1900 — 1975",w:"Rivages de l'homme",y:"1948",no:"Poursuit son œuvre majeure. Poésie de l'errance, du voyage, de l'amour. Pilier de la modernité poétique québécoise."},
+      {n:"Gabrielle Roy",d:"1909 — 1983",w:"Alexandre Chenevert",y:"1954",no:"Poursuit son œuvre. Romans de l'angoisse urbaine, de la solitude. <em>La Petite Poule d'Eau</em> (1950), <em>Alexandre Chenevert</em>."},
+      {n:"Saint-Denys Garneau",d:"1912 — 1943",w:"Journal",y:"1954",no:"Publication posthume de son <em>Journal</em>. Document essentiel sur la conscience tourmentée d'un poète moderne dans le Québec conservateur."}
+    ]
+  },
+  ch5: {
+    dates:"1960 — 1980", rn:"V", title:"L'émergence du Québec moderne",
+    tag:"Révolution tranquille, nationalisme, joual au théâtre, poésie du pays : la littérature devient le lieu d'une affirmation nationale et formelle.",
+    tl:[["1960","Début de la Révolution tranquille — Jean Lesage, « Maîtres chez nous »"],["1963","Fondation de la revue <em>Parti pris</em>"],["1965","<em>Prochain épisode</em> — Hubert Aquin"],["1968","<strong>Les Belles-sœurs</strong> — Michel Tremblay : révolution du théâtre en joual"],["1968","<em>Speak White</em> — Michèle Lalonde"],["1970","Crise d'octobre; <em>L'Homme rapaillé</em> — Gaston Miron"],["1976","Élection du Parti québécois"],["1980","Premier référendum — victoire du NON"]],
+    car:["<strong>Révolution tranquille</strong> : laïcisation, nationalisation (Hydro-Québec), éducation, État providence. Boom culturel.","<strong>Parti pris</strong> (1963-68) : revue indépendantiste, socialiste, décolonisatrice. Assume le <strong>joual</strong> comme langue littéraire.","<strong>Poésie du pays</strong> (Hexagone) : Miron, Lapointe, Chamberland — écrire le pays à faire.","<strong>Théâtre en joual</strong> : Tremblay fait entrer la parole populaire sur scène. Choc et révolution.","<strong>Explosion romanesque</strong> : Aquin, Blais, Ducharme, Godbout — postmodernité, formalisme, nouvelle écriture.","<strong>Chanson engagée</strong> : Vigneault, Leclerc, Ferland — le texte chanté comme littérature."],
+    aut:[
+      {n:"Hubert Aquin",d:"1929 — 1977",w:"Prochain épisode",y:"1965",no:"Écrit en prison (FLQ). Roman postmoderne, labyrinthique, où la révolution politique et l'écriture s'enchevêtrent. Suicide en 1977.",b:"Roman postmoderne"},
+      {n:"Marie-Claire Blais",d:"1939 — 2021",w:"Une saison dans la vie d'Emmanuel",y:"1965",no:"<strong>Prix Médicis</strong>. Satire féroce d'une famille rurale québécoise étouffée par la misère, la religion, la mort. Écriture baroque.",b:"Prix Médicis"},
+      {n:"Réjean Ducharme",d:"1941 — 2017",w:"L'Avalée des avalés",y:"1966",no:"Écrivain-ermite. Langue inventive, jeux de mots, révolte enfantine. Bérénice Einberg : l'une des plus grandes voix narratives du Québec."},
+      {n:"Jacques Godbout",d:"1933 —",w:"Salut Galarneau !",y:"1967",no:"Roman et cinéma. François Galarneau, marchand de hot-dogs-écrivain, incarne la tension vivre/écrire dans le Québec en mutation."},
+      {n:"Michel Tremblay",d:"1942 —",w:"Les Belles-sœurs",y:"1968",no:"<strong>Révolution du théâtre québécois</strong>. 15 femmes du Plateau collent des timbres-primes en joual. Scandale, puis consécration.",b:"Révolution théâtrale"},
+      {n:"Gaston Miron",d:"1928 — 1996",w:"L'Homme rapaillé",y:"1970",no:"Cofondateur de l'Hexagone. <strong>Poète national du Québec</strong>. Poésie du pays aliéné, de l'amour et de la dignité à reconquérir.",b:"Poète national"},
+      {n:"Anne Hébert",d:"1916 — 2000",w:"Kamouraska",y:"1970",no:"Roman inspiré d'un fait divers du XIX<sup>e</sup>. Élisabeth d'Aulnières, la passion meurtrière. Un sommet de la prose québécoise. Adapté au cinéma par Jutra."},
+      {n:"Michèle Lalonde",d:"1937 — 2021",w:"Speak White",y:"1968/1974",no:"<strong>Poème-manifeste</strong> emblématique de la condition linguistique québécoise. Reprise du mépris colonial pour le renverser. Récité à la Nuit de la poésie (1970)."},
+      {n:"Jacques Ferron",d:"1921 — 1985",w:"Contes du pays incertain",y:"1962",no:"Médecin-écrivain. Maître du conte moderne. Humour, fantastique, engagement politique (Rhinocéros). Figure morale du milieu littéraire."},
+      {n:"Paul-Marie Lapointe",d:"1929 — 2011",w:"Arbres",y:"1960",no:"Hexagone. Poème-litanie des arbres du Québec. Poésie du nommer, de l'ancrage, du pays végétal."},
+      {n:"Louky Bersianik",d:"1930 — 2011",w:"L'Euguélionne",y:"1976",no:"Pionnière du <strong>féminisme littéraire québécois</strong>. Parodie biblique où une extraterrestre dénonce le patriarcat. Humour, théorie, fiction mêlés.",b:"Féminisme"},
+      {n:"Gilles Vigneault",d:"1928 —",w:"Mon pays",y:"1965",no:"Chansonnier de Natashquan. « Mon pays, ce n'est pas un pays, c'est l'hiver. » Devient hymne officieux de la nation."},
+      {n:"Antonine Maillet",d:"1929 —",w:"Pélagie-la-Charrette",y:"1979",no:"Acadienne. <strong>Prix Goncourt 1979</strong> — première écrivaine non-française à l'obtenir. <em>La Sagouine</em> (1971) est aussi un classique.",b:"Prix Goncourt"}
+    ]
+  },
+  ch6: {
+    dates:"1980 — 2001", rn:"VI", title:"Référendums et mondialisation",
+    tag:"Après le NON de 1980 : diversification des voix, écriture migrante, féminisme mûri, entrée en postmodernité.",
+    tl:[["1980","Échec du premier référendum"],["1981","<em>Le Matou</em> — Yves Beauchemin : bestseller"],["1982","Rapatriement de la Constitution sans le Québec"],["1984","<em>Volkswagen Blues</em> — Jacques Poulin"],["1985","<em>Comment faire l'amour avec un Nègre sans se fatiguer</em> — Dany Laferrière"],["1990","Échec de l'Accord du lac Meech"],["1995","Second référendum — NON à 50,58%"],["1998","<em>La petite fille qui aimait trop les allumettes</em> — Soucy"]],
+    car:["<strong>Après le référendum perdu</strong> : fatigue du nationalisme, repli sur l'intime, diversification.","<strong>Écriture migrante</strong> : Dany Laferrière (Haïti), Ying Chen (Chine), Régine Robin (France), Émile Ollivier (Haïti). Le Québec littéraire s'internationalise.","<strong>Féminisme</strong> : Nicole Brossard, Louise Dupré, France Théoret — poétique et théorique.","<strong>Postmodernisme</strong> : brouillage des genres, autofiction, intertextualité.","<strong>Rayonnement international</strong> : Anne Hébert (Prix Femina 1982), Tremblay, Laferrière traduits partout."],
+    aut:[
+      {n:"Yves Beauchemin",d:"1941 —",w:"Le Matou",y:"1981",no:"Bestseller monumental. Florent Boissonneault et son chat Déjeuner : roman-fresque de Montréal, humour, enquête, appétit de vivre."},
+      {n:"Michel Tremblay",d:"1942 —",w:"Chroniques du Plateau Mont-Royal",y:"1978—1997",no:"Cycle romanesque majeur (6 tomes). La Grosse Femme, Édouard, Albertine : poursuite en prose de l'univers des Belles-sœurs."},
+      {n:"Dany Laferrière",d:"1953 —",w:"Comment faire l'amour avec un Nègre sans se fatiguer",y:"1985",no:"Premier roman, explosion. Figure majeure de <strong>l'écriture migrante</strong>. Élu à l'<strong>Académie française en 2013</strong>.",b:"Écriture migrante"},
+      {n:"Jacques Poulin",d:"1937 —",w:"Volkswagen Blues",y:"1984",no:"Road novel. Jack Waterman et la Grande Sauterelle (Métisse) traversent l'Amérique sur les traces d'un frère perdu. Mémoire, identité, métissage."},
+      {n:"Anne Hébert",d:"1916 — 2000",w:"Les Fous de Bassan",y:"1982",no:"<strong>Prix Femina</strong>. Polyphonie troublante sur un meurtre dans un village gaspésien anglophone. Sommet de son œuvre.",b:"Prix Femina"},
+      {n:"Marie Uguay",d:"1955 — 1981",w:"Poèmes",y:"posthume 1986",no:"Morte à 26 ans d'un cancer. Son œuvre poétique, pourtant brève, rayonne d'une intensité lumineuse unique.",b:"Nouveauté 4e éd."},
+      {n:"Nicole Brossard",d:"1943 —",w:"Le Désert mauve",y:"1987",no:"Poète et romancière majeure. Pionnière de l'écriture féministe et lesbienne. Formalisme audacieux, traduction mise en abyme."},
+      {n:"Gaétan Soucy",d:"1958 — 2013",w:"La petite fille qui aimait trop les allumettes",y:"1998",no:"Roman-choc. Une narratrice au langage aberrant découvre le monde après la mort de son père. Traduit dans 20 pays."},
+      {n:"Suzanne Jacob",d:"1943 —",w:"Laura Laur",y:"1983",no:"Voix singulière, exigeante. Écriture fragmentée, obsédée par la construction du sujet féminin."},
+      {n:"Francine Noël",d:"1945 —",w:"Maryse",y:"1983",no:"Roman d'une génération : Maryse, étudiante montréalaise des années 60-70, entre militantisme, amitiés et amours. Fresque féministe."}
+    ]
+  },
+  ch7: {
+    dates:"2001 — 2022", rn:"VII", title:"Les nouvelles inquiétudes",
+    tag:"Voix autochtones, littérature migrante assumée, autofiction, urgences climatiques et identitaires : le Québec littéraire dans le monde.",
+    tl:[["2001","<em>Putain</em> — Nelly Arcan"],["2003","<em>Incendies</em> — Wajdi Mouawad"],["2005","<em>Nikolski</em> — Nicolas Dickner"],["2009","<em>Ru</em> — Kim Thúy; <em>Bâtons à message</em> — Joséphine Bacon"],["2011","<em>Kuessipan</em> — Naomi Fontaine"],["2017","<em>Manikanetish</em> — Naomi Fontaine"],["2019","<em>Kukum</em> — Michel Jean; <em>J'aime Hydro</em> — Christine Beaulieu"]],
+    car:["<strong>Émergence des voix autochtones</strong> de langue française : Joséphine Bacon, Natasha Kanapé Fontaine, Naomi Fontaine, Michel Jean, An Antane Kapesh, Marie-Andrée Gill. Rupture historique.","<strong>Littérature migrante pleinement intégrée</strong> : Kim Thúy, Dany Laferrière, Wajdi Mouawad — le Québec comme carrefour mondial.","<strong>Autofiction radicale</strong> : Nelly Arcan, Catherine Mavrikakis — le corps, le sexe, la mort.","<strong>Théâtre documentaire</strong> : Christine Beaulieu (<em>J'aime Hydro</em>) renouvelle la forme en partant d'une enquête réelle.","<strong>Préoccupations nouvelles</strong> : environnement, réconciliation, identités multiples, féminisme renouvelé (#MeToo), numérique."],
+    aut:[
+      {n:"Nelly Arcan",d:"1973 — 2009",w:"Putain",y:"2001",no:"Coup de tonnerre. Autofiction brûlante : une étudiante escorte. Réflexion sur le corps, la féminité, la marchandisation. Suicide en 2009.",b:"Autofiction"},
+      {n:"Wajdi Mouawad",d:"1968 —",w:"Incendies",y:"2003",no:"Libanais-québécois. Tétralogie <em>Le Sang des promesses</em>. <em>Incendies</em> adapté au cinéma par Denis Villeneuve (nommé aux Oscars).",b:"Théâtre majeur"},
+      {n:"Nicolas Dickner",d:"1972 —",w:"Nikolski",y:"2005",no:"Trois personnages, un livre sans nom, une boussole fausse pointant vers l'île Nikolski. Roman des filiations errantes et de la mondialisation."},
+      {n:"Kim Thúy",d:"1968 —",w:"Ru",y:"2009",no:"Vietnamienne arrivée au Québec comme boat people. Récit autofictionnel en courts fragments sur l'exil, la famille, la renaissance.",b:"Écriture migrante"},
+      {n:"Joséphine Bacon",d:"1947 —",w:"Bâtons à message / Tshissinuatshitakana",y:"2009",no:"<strong>Poète innue</strong> de Pessamit. Recueil bilingue innu-aimun/français. Transmission, territoire, parole des Aînés.",b:"Voix autochtone"},
+      {n:"Naomi Fontaine",d:"1987 —",w:"Kuessipan",y:"2011",no:"Innue d'Uashat. Fresque de la communauté en courts portraits. <em>Manikanetish</em> (2017) suit son retour comme enseignante. Adapté au cinéma."},
+      {n:"Michel Jean",d:"1960 —",w:"Kukum",y:"2019",no:"Journaliste-écrivain innu. Récit de la vie de son arrière-grand-mère Almanda Siméon : de l'amour jusqu'à la sédentarisation forcée des Innus.",b:"Voix autochtone"},
+      {n:"An Antane Kapesh",d:"1926 — 2004",w:"Je suis une maudite Sauvagesse",y:"1976/2019",no:"<strong>Première autrice autochtone</strong> de langue française au Québec. Réédition marquante en 2019. Témoignage-réquisitoire fondateur.",b:"Nouveauté 4e éd."},
+      {n:"Natasha Kanapé Fontaine",d:"1991 —",w:"N'entre pas dans mon âme avec tes chaussures",y:"2012",no:"Poète innue militante de Pessamit. Slam, performance, décolonisation. Voix majeure de la nouvelle génération autochtone."},
+      {n:"Marie-Andrée Gill",d:"1986 —",w:"Béante / Chauffer le dehors",y:"2012, 2019",no:"Ilnu du Piekuakami (Lac-Saint-Jean). Poésie intime, amoureuse, enracinée. Renouvelle la voix autochtone avec humour et tendresse.",b:"Nouveauté 4e éd."},
+      {n:"Christine Beaulieu",d:"1982 —",w:"J'aime Hydro",y:"2019",no:"<strong>Théâtre documentaire</strong> : enquête vérité sur Hydro-Québec, jouée par l'autrice elle-même. Phénomène de scène et d'édition.",b:"Théâtre doc"},
+      {n:"Dany Laferrière",d:"1953 —",w:"L'Énigme du retour",y:"2009",no:"Retour en Haïti après la mort du père. <strong>Prix Médicis</strong> (2009). <strong>Académie française</strong> en 2013 : premier Québécois au fauteuil 2.",b:"Académicien"},
+      {n:"Loco Locass",d:"groupe, depuis 1995",w:"Amour oral",y:"2004",no:"Trio rap engagé (Biz, Batlam, Chafiik). Textes politiques, lyriques, patriotiques. Prolonge la tradition de la chanson engagée."}
+    ]
+  }
+};
+
+const CH_ORDER = ["ch1","ch2","ch3","ch4","ch5","ch6","ch7"];
+
+// =============== QUIZ BANK ===============
+const Q = [
+  // MULTIPLE CHOICE
+  {t:"qcm",ch:"ch1",q:"Qui, en 1534, donne à la terre canadienne le nom de « Canada » ?",o:["Samuel de Champlain","Jacques Cartier","Pierre-Esprit Radisson","Louis Jolliet"],a:1,f:"Cartier adopte le mot iroquoien <strong>kanata</strong> (qui signifie « village ») lors de ses voyages."},
+  {t:"qcm",ch:"ch1",q:"Quelle œuvre est la source ethnographique majeure sur les Hurons et Iroquois au XVII<sup>e</sup> siècle ?",o:["La Correspondance de Marie de l'Incarnation","Les Voyages de Champlain","Les Relations des Jésuites","Les Dialogues de Lahontan"],a:2,f:"Publiées annuellement de <strong>1632 à 1672</strong>, les Relations des Jésuites sont une source documentaire inégalée."},
+  {t:"qcm",ch:"ch2",q:"Quel rapport de 1840 a déclaré les Canadiens français « peuple sans histoire ni littérature » ?",o:["Le Rapport Garneau","Le Rapport Durham","Le Rapport Carillon","Le Rapport Crémazie"],a:1,f:"Le <strong>Rapport Durham</strong> motive directement Garneau à écrire son <em>Histoire du Canada</em>."},
+  {t:"qcm",ch:"ch2",q:"Quel est considéré comme le premier roman psychologique canadien-français ?",o:["Les Anciens Canadiens","Jean Rivard","Angéline de Montbrun","Le Survenant"],a:2,f:"Publié en 1881-1884 par <strong>Laure Conan</strong>, première romancière canadienne-française."},
+  {t:"qcm",ch:"ch3",q:"Quel roman marque la fin du roman du terroir en 1938 ?",o:["Menaud, maître-draveur","Maria Chapdelaine","Trente arpents","Un homme et son péché"],a:2,f:"<em>Trente arpents</em> de <strong>Ringuet</strong> offre une vision réaliste et désenchantée du paysan dépossédé par la modernité."},
+  {t:"qcm",ch:"ch3",q:"Quel roman de 1945 inaugure le roman urbain québécois ?",o:["Le Survenant","Bonheur d'occasion","Au pied de la pente douce","Les Plouffe"],a:1,f:"<strong>Gabrielle Roy</strong> y dépeint le quartier ouvrier de Saint-Henri pendant la Deuxième Guerre mondiale."},
+  {t:"qcm",ch:"ch3",q:"Qui est considéré comme le fondateur de la poésie moderne au Québec avec <em>Regards et jeux dans l'espace</em> (1937) ?",o:["Émile Nelligan","Alain Grandbois","Saint-Denys Garneau","Rina Lasnier"],a:2,f:"<strong>Saint-Denys Garneau</strong> introduit le vers libre et l'angoisse existentielle. Cousin d'Anne Hébert."},
+  {t:"qcm",ch:"ch4",q:"En quelle année paraît le manifeste <em>Refus global</em> de Paul-Émile Borduas ?",o:["1945","1948","1953","1960"],a:1,f:"Signé par 16 artistes, il marque une rupture totale avec la société conservatrice de Duplessis."},
+  {t:"qcm",ch:"ch4",q:"Quel recueil d'Anne Hébert, publié en 1953, est un sommet de la poésie québécoise ?",o:["Les Songes en équilibre","Le Tombeau des rois","Poèmes","Kamouraska"],a:1,f:"<em>Le Tombeau des rois</em> : atmosphère sombre, onirique, exploration de l'inconscient."},
+  {t:"qcm",ch:"ch5",q:"Quelle pièce de 1968 révolutionne le théâtre québécois en consacrant le joual ?",o:["Tit-Coq","Les Belles-sœurs","La Sagouine","Broue"],a:1,f:"<strong>Michel Tremblay</strong> fait entrer la parole populaire sur la scène québécoise. Choc, puis consécration."},
+  {t:"qcm",ch:"ch5",q:"Quel poète est souvent appelé le « poète national du Québec » ?",o:["Paul-Marie Lapointe","Gilles Vigneault","Gaston Miron","Alain Grandbois"],a:2,f:"<strong>Miron</strong>, cofondateur de l'Hexagone, auteur de <em>L'Homme rapaillé</em> (1970)."},
+  {t:"qcm",ch:"ch5",q:"Quel roman d'Hubert Aquin, écrit en prison, devient emblématique du postmodernisme québécois ?",o:["Kamouraska","Salut Galarneau !","Prochain épisode","L'Avalée des avalés"],a:2,f:"Publié en 1965, il entrelace révolution politique (FLQ) et quête d'écriture."},
+  {t:"qcm",ch:"ch5",q:"Quelle écrivaine remporte le Prix Goncourt en 1979 pour <em>Pélagie-la-Charrette</em> ?",o:["Marie-Claire Blais","Anne Hébert","Antonine Maillet","Louky Bersianik"],a:2,f:"<strong>Antonine Maillet</strong>, Acadienne, est la première écrivaine non-française à obtenir le Goncourt."},
+  {t:"qcm",ch:"ch6",q:"Quel roman de Dany Laferrière (1985) est une figure fondatrice de l'écriture migrante ?",o:["L'Énigme du retour","Comment faire l'amour avec un Nègre sans se fatiguer","Volkswagen Blues","Le Matou"],a:1,f:"Premier roman-choc. Laferrière sera élu à l'<strong>Académie française en 2013</strong>."},
+  {t:"qcm",ch:"ch6",q:"Quel roman d'Anne Hébert remporte le Prix Femina en 1982 ?",o:["Kamouraska","Les Fous de Bassan","Le Torrent","Les Enfants du sabbat"],a:1,f:"Polyphonie troublante sur un meurtre dans un village gaspésien anglophone."},
+  {t:"qcm",ch:"ch7",q:"Quelle autrice est considérée comme la première autochtone de langue française publiée au Québec (1976) ?",o:["Joséphine Bacon","Natasha Kanapé Fontaine","An Antane Kapesh","Naomi Fontaine"],a:2,f:"<em>Je suis une maudite Sauvagesse</em> d'An Antane Kapesh, réédité en 2019, fait figure de texte fondateur."},
+  {t:"qcm",ch:"ch7",q:"Quel récit de Kim Thúy (2009) raconte l'exil vietnamien vers le Québec ?",o:["Mãn","Ru","Vi","Em"],a:1,f:"<em>Ru</em> est un récit fragmentaire en courts tableaux — « petit ruisseau » en vietnamien, « berceuse » en français."},
+  {t:"qcm",ch:"ch7",q:"Quelle pièce de Christine Beaulieu (2019) renouvelle le théâtre documentaire au Québec ?",o:["J'aime Hydro","Littoral","Incendies","Le Vrai monde ?"],a:0,f:"Enquête-vérité sur Hydro-Québec, jouée par l'autrice elle-même. Grand succès."},
+
+  // VRAI/FAUX
+  {t:"vf",ch:"ch1",q:"Lahontan utilise la figure du Huron Adario pour critiquer les mœurs européennes, annonçant le « bon sauvage » de Rousseau.",a:true,f:"Exact. Les <em>Dialogues avec un sauvage</em> (1703) sont un précurseur de la pensée des Lumières."},
+  {t:"vf",ch:"ch2",q:"Octave Crémazie a écrit son œuvre entièrement depuis le Québec, où il est mort entouré de gloire.",a:false,f:"Faux. Exilé en France après une faillite, il y est mort pauvre. Sa correspondance avec l'abbé Casgrain reste précieuse."},
+  {t:"vf",ch:"ch3",q:"<em>Maria Chapdelaine</em> a été écrit par un Québécois de naissance.",a:false,f:"Faux. <strong>Louis Hémon</strong> était Français. Il est venu travailler au Lac-Saint-Jean, puis est mort jeune (train, 1913)."},
+  {t:"vf",ch:"ch4",q:"Le <em>Refus global</em> a été signé par un seul auteur, Paul-Émile Borduas.",a:false,f:"Faux. C'est un manifeste <strong>collectif</strong> signé par 16 artistes, dont Riopelle et Françoise Sullivan."},
+  {t:"vf",ch:"ch5",q:"Gaston Miron est cofondateur des Éditions de l'Hexagone.",a:true,f:"Exact. Fondées en 1953, elles publient la « poésie du pays » d'une génération entière."},
+  {t:"vf",ch:"ch5",q:"Michèle Lalonde a écrit le poème <em>Speak White</em>.",a:true,f:"Exact. D'abord écrit en 1968, récité à la Nuit de la poésie en 1970, publié en 1974. Poème-manifeste majeur."},
+  {t:"vf",ch:"ch6",q:"Marie Uguay a publié une abondante œuvre poétique de son vivant.",a:false,f:"Faux. Morte à <strong>26 ans</strong> d'un cancer (1981), son œuvre courte mais intense rayonne surtout de façon posthume."},
+  {t:"vf",ch:"ch7",q:"Dany Laferrière a été élu à l'Académie française en 2013.",a:true,f:"Exact. Premier Québécois élu sous la Coupole, au fauteuil 2."},
+  {t:"vf",ch:"ch7",q:"Wajdi Mouawad est né au Québec.",a:false,f:"Faux. Né au <strong>Liban</strong>, il arrive au Québec par la France. <em>Incendies</em> (2003) fait partie de sa tétralogie."},
+
+  // ASSOCIATIONS (auteur ↔ œuvre)
+  {t:"match",ch:"ch3",q:"Associe chaque auteur à son œuvre (période 1900-1945).",left:["Louis Hémon","Ringuet","Gabrielle Roy","Saint-Denys Garneau"],right:["Maria Chapdelaine","Trente arpents","Bonheur d'occasion","Regards et jeux dans l'espace"],pairs:[[0,0],[1,1],[2,2],[3,3]]},
+  {t:"match",ch:"ch5",q:"Associe chaque auteur à son œuvre (période 1960-1980).",left:["Hubert Aquin","Marie-Claire Blais","Michel Tremblay","Gaston Miron"],right:["Prochain épisode","Une saison dans la vie d'Emmanuel","Les Belles-sœurs","L'Homme rapaillé"],pairs:[[0,0],[1,1],[2,2],[3,3]]},
+  {t:"match",ch:"ch7",q:"Associe chaque auteur à son œuvre (période 2001-2022).",left:["Kim Thúy","Wajdi Mouawad","Michel Jean","Joséphine Bacon"],right:["Ru","Incendies","Kukum","Bâtons à message"],pairs:[[0,0],[1,1],[2,2],[3,3]]},
+  {t:"match",ch:"mix",q:"Associe chaque mouvement/manifeste à son auteur principal.",left:["Refus global","Parti pris","École littéraire de Montréal","Mouvement littéraire de Québec"],right:["Paul-Émile Borduas","revue fondée en 1963","Émile Nelligan","Octave Crémazie"],pairs:[[0,0],[1,1],[2,2],[3,3]]},
+
+  // CHRONOLOGIE
+  {t:"order",ch:"mix",q:"Remets ces œuvres dans l'ordre chronologique (de la plus ancienne à la plus récente).",items:["Les Anciens Canadiens (1863)","Maria Chapdelaine (1913)","Bonheur d'occasion (1945)","Les Belles-sœurs (1968)","Ru (2009)"],correct:[0,1,2,3,4]},
+  {t:"order",ch:"mix",q:"Classe ces événements littéraires dans l'ordre chronologique.",items:["Premier voyage de Cartier (1534)","Rapport Durham (1840)","Refus global (1948)","Révolution tranquille (1960)","Référendum perdu (1980)"],correct:[0,1,2,3,4]},
+  {t:"order",ch:"mix",q:"Ordonne ces écrivains par date de naissance (du plus ancien au plus récent).",items:["Philippe Aubert de Gaspé (1786)","Laure Conan (1845)","Émile Nelligan (1879)","Gabrielle Roy (1909)","Michel Tremblay (1942)"],correct:[0,1,2,3,4]},
+
+  // TEXTE À TROUVER (fill-in)
+  {t:"fill",ch:"ch2",q:"Le premier roman psychologique canadien-français, <em>Angéline de Montbrun</em>, a été écrit par ____.",a:["laure conan","conan","félicité angers","felicite angers"],f:"<strong>Laure Conan</strong> (pseudonyme de Félicité Angers) est la première romancière canadienne-française."},
+  {t:"fill",ch:"ch3",q:"Le premier grand roman urbain québécois s'intitule <em>____</em> et date de 1945.",a:["bonheur d'occasion","bonheur doccasion","bonheur d occasion"],f:"<strong>Bonheur d'occasion</strong> de Gabrielle Roy. Prix Femina 1947."},
+  {t:"fill",ch:"ch4",q:"Le manifeste publié en 1948 par Borduas et 15 autres artistes s'appelle <em>____</em>.",a:["refus global","le refus global"],f:"Le <strong>Refus global</strong> dénonce la peur, le cléricalisme, la société fermée."},
+  {t:"fill",ch:"ch5",q:"La maison d'édition fondée en 1953, centrale à la « poésie du pays », s'appelle l'____.",a:["hexagone","l'hexagone","lhexagone"],f:"L'<strong>Hexagone</strong> — Miron, Lapointe, Chamberland, etc."},
+  {t:"fill",ch:"ch5",q:"Dans <em>Les Belles-sœurs</em> (1968), Michel Tremblay fait entrer le ____ dans le théâtre littéraire québécois.",a:["joual","le joual"],f:"Le <strong>joual</strong>, parler populaire urbain, devient langue littéraire assumée."},
+  {t:"fill",ch:"ch7",q:"Le poète innu de Pessamit, auteur de <em>Bâtons à message</em>, s'appelle ____ Bacon.",a:["joséphine","josephine"],f:"<strong>Joséphine Bacon</strong> (1947—) : recueil bilingue innu-aimun/français."},
+
+  // QCM additionnels variés
+  {t:"qcm",ch:"ch2",q:"Qui est l'auteur de la chanson-poème <em>Un Canadien errant</em> ?",o:["Octave Crémazie","Antoine Gérin-Lajoie","Louis Fréchette","Arthur Buies"],a:1,f:"Gérin-Lajoie écrit ce texte en 1842 au sujet des Patriotes exilés."},
+  {t:"qcm",ch:"ch3",q:"Dans <em>Un homme et son péché</em> (1933), qui est le personnage central ?",o:["Menaud","Euchariste Moisan","Séraphin Poudrier","Le Survenant"],a:2,f:"Séraphin, l'avare de Claude-Henri Grignon, devient un mythe populaire (radio, télé, cinéma)."},
+  {t:"qcm",ch:"ch5",q:"Quel roman d'Anne Hébert, inspiré d'un fait divers du XIX<sup>e</sup>, paraît en 1970 ?",o:["Les Fous de Bassan","Kamouraska","Le Premier Jardin","Les Enfants du sabbat"],a:1,f:"Élisabeth d'Aulnières et son amour meurtrier. Adapté au cinéma par Claude Jutra."},
+  {t:"qcm",ch:"ch5",q:"Quelle chanson de Gilles Vigneault est devenue un hymne officieux du Québec ?",o:["Gens du pays","Mon pays","Le Tour de l'île","Les Gens de mon pays"],a:1,f:"« Mon pays, ce n'est pas un pays, c'est l'hiver. » (1965)"},
+  {t:"qcm",ch:"ch6",q:"Quel roman de Jacques Poulin (1984) raconte un voyage à travers l'Amérique avec une Métisse ?",o:["Les Grandes Marées","Volkswagen Blues","La Tournée d'automne","Le Vieux Chagrin"],a:1,f:"Jack Waterman et la Grande Sauterelle, sur les traces d'un frère perdu."},
+  {t:"vf",ch:"ch1",q:"Marie de l'Incarnation est la première à tenir un journal intime au Québec.",a:false,f:"Non. Elle écrit surtout une abondante <strong>correspondance</strong>, notamment à son fils Claude Martin."},
+  {t:"vf",ch:"ch4",q:"La Grande Noirceur désigne la période du gouvernement de Maurice Duplessis.",a:true,f:"Exact. L'Union nationale de Duplessis gouverne de 1936-1939 et 1944-1959."},
+  {t:"vf",ch:"ch6",q:"Gaétan Soucy a écrit <em>La petite fille qui aimait trop les allumettes</em>.",a:true,f:"Exact, en 1998. Roman traduit dans une vingtaine de langues."}
+];
+
+// =============== APP STATE ===============
+let currentTab = "intro";
+
+// =============== RENDER INTRO ===============
+function renderIntro() {
+  const cards = CH_ORDER.map(k => {
+    const c = CH[k];
+    return `<button class="ic" onclick="goTab('${k}')">
+      <span class="n">${c.rn}</span>
+      <div class="dt">${c.dates}</div>
+      <div class="tt">${c.title}</div>
+    </button>`;
+  }).join("");
+
+  return `
+    <div class="chead">
+      <div class="d">Mode d'emploi</div>
+      <h2>Tout ce qu'il te faut pour l'examen</h2>
+      <p class="tag">Navigue par chapitre pour réviser les contextes, caractéristiques et auteurs clés. Lance ensuite le quiz pour te tester sur des questions variées : QCM, vrai/faux, associations, chronologie, texte à trouver.</p>
+    </div>
+    <div class="sec">
+      <div class="stit">Les sept périodes</div>
+      <div class="igrid">${cards}</div>
+    </div>
+    <div class="sec">
+      <div class="stit">Conseils de dernière minute</div>
+      <div class="pros">
+        <ul>
+          <li><strong>Dates-pivots à retenir</strong> : 1534, 1760, 1840 (Rapport Durham), 1948 (Refus global), 1960 (Révolution tranquille), 1968 (Belles-sœurs), 1980 (référendum).</li>
+          <li><strong>Premières fois</strong> : première romancière (Conan), premier roman urbain (Roy), première autochtone publiée (Kapesh), premier Québécois à l'Académie (Laferrière), premier Goncourt (Maillet).</li>
+          <li><strong>Grandes oppositions</strong> : Terroir vs Exotisme (1900-45), Tradition vs Refus global (1945-60), Québec vs Canada (1960-80).</li>
+          <li><strong>Voix nouvelles en 4<sup>e</sup> édition</strong> : Rina Lasnier, Louky Bersianik, Marie Uguay, voix autochtones (Bacon, Kanapé Fontaine, Fontaine, Jean, Kapesh, Gill), Christine Beaulieu.</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+// =============== RENDER CHAPTER ===============
+function renderChapter(key) {
+  const c = CH[key];
+  const tl = c.tl.map(([y,e]) => `<div class="r"><div class="y">${y}</div><div class="e">${e}</div></div>`).join("");
+  const car = c.car.map(x => `<li>${x}</li>`).join("");
+  const aut = c.aut.map(a => `
+    <div class="ac">
+      <div class="an">${a.n}</div>
+      <div class="ad">${a.d}</div>
+      ${a.w ? `<span class="aw">${a.w}${a.y ? `<span class="yr">${a.y}</span>` : ""}</span>` : ""}
+      <div class="no">${a.no}</div>
+      ${a.b ? `<span class="bg">${a.b}</span>` : ""}
+    </div>
+  `).join("");
+
+  return `
+    <div class="chead">
+      <div class="d">Chapitre ${c.rn} · ${c.dates}</div>
+      <h2>${c.title}</h2>
+      <p class="tag">${c.tag}</p>
+    </div>
+    <div class="sec">
+      <div class="stit">Contexte historique</div>
+      <div class="tl">${tl}</div>
+    </div>
+    <div class="sec">
+      <div class="stit">Caractéristiques littéraires</div>
+      <div class="pros"><ul>${car}</ul></div>
+    </div>
+    <div class="sec">
+      <div class="stit">Auteurs et œuvres incontournables</div>
+      <div class="auths">${aut}</div>
+    </div>
+  `;
+}
+
+// =============== QUIZ ===============
+let quiz = { state:"setup", questions:[], idx:0, answers:[], length:15, chapter:"mix" };
+
+function renderQuiz() {
+  if (quiz.state === "setup") return renderQuizSetup();
+  if (quiz.state === "playing") return renderQuizQuestion();
+  if (quiz.state === "done") return renderQuizResults();
+}
+
+function renderQuizSetup() {
+  const chapOptions = [
+    `<option value="mix">Tout (mélangé)</option>`,
+    ...CH_ORDER.map(k => `<option value="${k}">Ch. ${CH[k].rn} — ${CH[k].title}</option>`)
+  ].join("");
+  return `
+    <div class="chead">
+      <div class="d">Épreuve d'entraînement</div>
+      <h2>Quiz à questions variées</h2>
+      <p class="tag">QCM, vrai/faux, associations, chronologie, texte à trouver. Choisis ton nombre de questions et la période à travailler.</p>
+    </div>
+    <div class="qi">
+      <div class="qs">
+        <div class="qsr">
+          <label>Questions :</label>
+          <select id="qlen">
+            <option value="10">10</option>
+            <option value="15" selected>15</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="999">Toutes</option>
+          </select>
+        </div>
+        <div class="qsr">
+          <label>Portée :</label>
+          <select id="qchap">${chapOptions}</select>
+        </div>
+      </div>
+      <button class="btn" onclick="startQuiz()">Commencer ⚔</button>
+    </div>
+  `;
+}
+
+function startQuiz() {
+  quiz.length = parseInt(document.getElementById("qlen").value);
+  quiz.chapter = document.getElementById("qchap").value;
+  let pool = quiz.chapter === "mix" ? [...Q] : Q.filter(q => q.ch === quiz.chapter || q.ch === "mix");
+  pool = pool.sort(() => Math.random() - 0.5);
+  quiz.questions = pool.slice(0, Math.min(quiz.length, pool.length));
+  quiz.idx = 0;
+  quiz.answers = [];
+  quiz.state = "playing";
+  render();
+}
+
+function renderQuizQuestion() {
+  const q = quiz.questions[quiz.idx];
+  const n = quiz.questions.length;
+  const progress = (quiz.idx / n) * 100;
+  const typeLabel = { qcm:"Choix multiple", vf:"Vrai ou faux", match:"Associations", order:"Chronologie", fill:"Texte à trouver" }[q.t];
+
+  let body = "";
+  if (q.t === "qcm") body = renderQCM(q);
+  else if (q.t === "vf") body = renderVF(q);
+  else if (q.t === "match") body = renderMatch(q);
+  else if (q.t === "order") body = renderOrder(q);
+  else if (q.t === "fill") body = renderFill(q);
+
+  return `
+    <div class="qp">
+      <span>Question ${quiz.idx + 1} / ${n}</span>
+      <div class="pb"><div class="pf" style="transform:scaleX(${progress/100})"></div></div>
+      <span>${Math.round(progress)} %</span>
+    </div>
+    <div class="qc">
+      <div class="qt">${typeLabel}</div>
+      <div class="qq">${q.q}</div>
+      ${body}
+    </div>
+  `;
+}
+
+function renderQCM(q) {
+  const opts = q.o.map((o,i) => `<button class="qopt" data-i="${i}" onclick="answerQCM(${i})">${o}</button>`).join("");
+  return `<div class="qo">${opts}</div><div id="qfeed"></div>`;
+}
+
+function answerQCM(i) {
+  const q = quiz.questions[quiz.idx];
+  const opts = document.querySelectorAll(".qopt");
+  opts.forEach(o => o.disabled = true);
+  opts[q.a].classList.add("ok");
+  if (i !== q.a) opts[i].classList.add("no");
+  const ok = i === q.a;
+  quiz.answers.push({q:q, ok:ok});
+  showFeedback(q.f, ok);
+}
+
+function renderVF(q) {
+  return `<div class="qo">
+    <button class="qopt" data-i="true" onclick="answerVF(true)">Vrai</button>
+    <button class="qopt" data-i="false" onclick="answerVF(false)">Faux</button>
+  </div><div id="qfeed"></div>`;
+}
+
+function answerVF(val) {
+  const q = quiz.questions[quiz.idx];
+  const opts = document.querySelectorAll(".qopt");
+  opts.forEach(o => o.disabled = true);
+  opts.forEach(o => {
+    const v = o.dataset.i === "true";
+    if (v === q.a) o.classList.add("ok");
+    else if (v === val) o.classList.add("no");
+  });
+  const ok = val === q.a;
+  quiz.answers.push({q:q, ok:ok});
+  showFeedback(q.f, ok);
+}
+
+let matchState = { leftSel:null, matched:[], wrongs:0 };
+function renderMatch(q) {
+  matchState = { leftSel:null, matched:[], wrongs:0, total:q.left.length };
+  // Shuffle right side for display
+  const rightShuffled = q.right.map((r,i) => ({r, origIdx:i})).sort(() => Math.random() - 0.5);
+  matchState.rightMap = rightShuffled;
+  const leftHtml = q.left.map((l,i) => `<div class="mi" data-side="L" data-i="${i}" onclick="matchClick('L',${i})">${l}</div>`).join("");
+  const rightHtml = rightShuffled.map((r,i) => `<div class="mi" data-side="R" data-i="${i}" onclick="matchClick('R',${i})">${r.r}</div>`).join("");
+  return `<div class="mg"><div class="mc">${leftHtml}</div><div class="mc">${rightHtml}</div></div><div id="qfeed"></div>`;
+}
+
+function matchClick(side, i) {
+  const q = quiz.questions[quiz.idx];
+  const el = document.querySelector(`.mi[data-side="${side}"][data-i="${i}"]`);
+  if (el.classList.contains("mok") || el.classList.contains("mno")) return;
+  if (side === "L") {
+    document.querySelectorAll('.mi[data-side="L"]').forEach(e => { if (!e.classList.contains("mok")) e.classList.remove("act"); });
+    el.classList.add("act");
+    matchState.leftSel = i;
+  } else {
+    if (matchState.leftSel === null) return;
+    const leftIdx = matchState.leftSel;
+    const rightOrigIdx = matchState.rightMap[i].origIdx;
+    const expected = q.pairs.find(p => p[0] === leftIdx);
+    const correct = expected && expected[1] === rightOrigIdx;
+    const leftEl = document.querySelector(`.mi[data-side="L"][data-i="${leftIdx}"]`);
+    if (correct) {
+      leftEl.classList.remove("act"); leftEl.classList.add("mok");
+      el.classList.add("mok");
+      matchState.matched.push(leftIdx);
+      if (matchState.matched.length === matchState.total) {
+        const ok = matchState.wrongs === 0;
+        quiz.answers.push({q:q, ok:ok});
+        showFeedback(ok ? "Parfait, toutes les associations sont correctes." : `${matchState.wrongs} erreur(s) avant de compléter toutes les paires.`, ok);
+      }
+    } else {
+      el.classList.add("mno");
+      leftEl.classList.add("mno");
+      matchState.wrongs++;
+      setTimeout(() => {
+        el.classList.remove("mno");
+        if (!leftEl.classList.contains("mok")) { leftEl.classList.remove("mno"); leftEl.classList.remove("act"); }
+        matchState.leftSel = null;
+      }, 800);
+    }
+  }
+}
+
+let orderState = { items:[] };
+function renderOrder(q) {
+  orderState.items = q.items.map((item, i) => ({ item, origIdx:i })).sort(() => Math.random() - 0.5);
+  return `<div class="ol" id="olist">${renderOrderList()}</div>
+    <button class="btn" onclick="checkOrder()">Vérifier</button>
+    <div id="qfeed"></div>`;
+}
+
+function renderOrderList() {
+  return orderState.items.map((it, i) => `
+    <div class="oi">
+      <span class="on">${i+1}</span>
+      <span>${it.item}</span>
+      <span class="mv">
+        <button onclick="moveItem(${i},-1)" ${i===0?"disabled style='opacity:.3'":""}>▲</button>
+        <button onclick="moveItem(${i},1)" ${i===orderState.items.length-1?"disabled style='opacity:.3'":""}>▼</button>
+      </span>
+    </div>
+  `).join("");
+}
+
+function moveItem(i, dir) {
+  const j = i + dir;
+  if (j < 0 || j >= orderState.items.length) return;
+  [orderState.items[i], orderState.items[j]] = [orderState.items[j], orderState.items[i]];
+  document.getElementById("olist").innerHTML = renderOrderList();
+}
+
+function checkOrder() {
+  const q = quiz.questions[quiz.idx];
+  const userOrder = orderState.items.map(x => x.origIdx);
+  const ok = JSON.stringify(userOrder) === JSON.stringify(q.correct);
+  const items = document.querySelectorAll(".oi");
+  items.forEach((el, i) => {
+    if (userOrder[i] === q.correct[i]) el.classList.add("ok");
+    else el.classList.add("no");
+  });
+  quiz.answers.push({q:q, ok:ok});
+  const correctText = q.correct.map(idx => q.items[idx]).join(" → ");
+  showFeedback(ok ? "Ordre parfait." : `Ordre correct : ${correctText}`, ok);
+  document.querySelector("button.btn").disabled = true;
+}
+
+function renderFill(q) {
+  return `<input type="text" class="qin" id="fillin" placeholder="Ta réponse..." autocomplete="off" onkeydown="if(event.key==='Enter')answerFill()">
+    <button class="btn" onclick="answerFill()">Valider</button>
+    <div id="qfeed"></div>`;
+}
+
+function answerFill() {
+  const q = quiz.questions[quiz.idx];
+  const input = document.getElementById("fillin");
+  const val = input.value.trim().toLowerCase().replace(/['']/g, "'");
+  const ok = q.a.some(ans => val.includes(ans));
+  input.disabled = true;
+  document.querySelector(".qin + .btn").disabled = true;
+  quiz.answers.push({q:q, ok:ok});
+  showFeedback(q.f + (ok ? "" : `<br><strong>Réponse attendue :</strong> ${q.a[0]}`), ok);
+}
+
+function showFeedback(text, ok) {
+  const feed = document.getElementById("qfeed");
+  feed.innerHTML = `<div class="qf">${ok ? "✓ <strong>Correct.</strong> " : "✗ <strong>Pas tout à fait.</strong> "}${text}</div>
+    <div class="acts">
+      <button class="btn" onclick="nextQuestion()">${quiz.idx === quiz.questions.length - 1 ? "Voir les résultats" : "Question suivante →"}</button>
+    </div>`;
+}
+
+function nextQuestion() {
+  quiz.idx++;
+  if (quiz.idx >= quiz.questions.length) { quiz.state = "done"; }
+  render();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+function renderQuizResults() {
+  const total = quiz.answers.length;
+  const correct = quiz.answers.filter(a => a.ok).length;
+  const pct = Math.round(correct / total * 100);
+  const verdict = pct >= 90 ? "Excellent — tu maîtrises la matière." :
+                  pct >= 75 ? "Très bien — quelques points à peaufiner." :
+                  pct >= 60 ? "Correct — révise les chapitres faibles." :
+                  pct >= 40 ? "Des bases à consolider. Retourne aux fiches." :
+                              "À reprendre. Vise les résumés de période d'abord.";
+
+  // Breakdown by chapter
+  const breakdown = {};
+  quiz.answers.forEach(a => {
+    const key = a.q.ch === "mix" ? "Transversal" : `Ch. ${CH[a.q.ch].rn}`;
+    if (!breakdown[key]) breakdown[key] = { ok:0, total:0 };
+    breakdown[key].total++;
+    if (a.ok) breakdown[key].ok++;
+  });
+  const breakRows = Object.entries(breakdown).map(([k,v]) =>
+    `<div class="rw"><span>${k}</span><span class="pct">${v.ok}/${v.total} (${Math.round(v.ok/v.total*100)} %)</span></div>`
+  ).join("");
+
+  return `
+    <div class="chead">
+      <div class="d">Résultat</div>
+      <h2>Bilan de la session</h2>
+    </div>
+    <div class="res">
+      <div class="sc">${correct}<em>/${total}</em></div>
+      <div class="vd">${pct} % — ${verdict}</div>
+      <div class="rb">
+        <h4>Répartition par chapitre</h4>
+        ${breakRows}
+      </div>
+      <div class="acts">
+        <button class="btn" onclick="resetQuiz()">Refaire un quiz</button>
+        <button class="btn bgh" onclick="goTab('intro')">Retour aux fiches</button>
+      </div>
+    </div>
+  `;
+}
+
+function resetQuiz() {
+  quiz = { state:"setup", questions:[], idx:0, answers:[], length:15, chapter:"mix" };
+  render();
+}
+
+// =============== ROUTER ===============
+function goTab(tab) {
+  currentTab = tab;
+  if (tab === "quiz" && quiz.state !== "setup" && quiz.state !== "playing") {
+    quiz.state = "setup";
+  }
+  render();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+function renderNav() {
+  const tabs = [
+    {k:"intro", label:"Accueil"},
+    ...CH_ORDER.map(k => ({k, label:`<span class="rn">${CH[k].rn}</span>${CH[k].dates.replace(" — ","—")}`})),
+    {k:"quiz", label:"Quiz ⚔"}
+  ];
+  document.getElementById("nav").innerHTML = tabs.map(t =>
+    `<button class="${currentTab === t.k ? "active" : ""}" onclick="goTab('${t.k}')">${t.label}</button>`
+  ).join("");
+}
+
+function render() {
+  renderNav();
+  const content = document.getElementById("content");
+  let html = "";
+  if (currentTab === "intro") html = renderIntro();
+  else if (currentTab === "quiz") html = renderQuiz();
+  else html = renderChapter(currentTab);
+  content.innerHTML = `<div class="tab active">${html}</div>`;
+}
+
+// Initial render
+render();
+</script>
+</body></html>
